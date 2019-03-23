@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		BF14018722452B96004F4DAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14018622452B96004F4DAF /* AppDelegate.swift */; };
-		BF14018922452B96004F4DAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14018822452B96004F4DAF /* ViewController.swift */; };
 		BF14018E22452B9B004F4DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF14018D22452B9B004F4DAF /* Assets.xcassets */; };
 		BF14019122452B9B004F4DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF14018F22452B9B004F4DAF /* LaunchScreen.storyboard */; };
 		BF1401DF224678B5004F4DAF /* SemiModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1401DE224678B5004F4DAF /* SemiModalPresentationController.swift */; };
+		BF1401E522467E9D004F4DAF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1401E322467E9D004F4DAF /* FirstViewController.swift */; };
+		BF1401E622467E9D004F4DAF /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1401E422467E9D004F4DAF /* FirstViewController.xib */; };
+		BF1401E922467F02004F4DAF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1401E722467F02004F4DAF /* SecondViewController.swift */; };
+		BF1401EA22467F02004F4DAF /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1401E822467F02004F4DAF /* SecondViewController.xib */; };
+		BFFED6062246883000799811 /* SemiModalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFED6052246883000799811 /* SemiModalExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF14018322452B96004F4DAF /* SemiModal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SemiModal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF14018622452B96004F4DAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF14018822452B96004F4DAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF14018D22452B9B004F4DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF14019022452B9B004F4DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF14019222452B9B004F4DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF1401DE224678B5004F4DAF /* SemiModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalPresentationController.swift; sourceTree = "<group>"; };
+		BF1401E322467E9D004F4DAF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		BF1401E422467E9D004F4DAF /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		BF1401E722467F02004F4DAF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BF1401E822467F02004F4DAF /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		BFFED6052246883000799811 /* SemiModalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		BF14018522452B96004F4DAF /* SemiModal */ = {
 			isa = PBXGroup;
 			children = (
+				BF1401E222467E79004F4DAF /* Demo */,
 				BF14018622452B96004F4DAF /* AppDelegate.swift */,
-				BF14018822452B96004F4DAF /* ViewController.swift */,
 				BF14018D22452B9B004F4DAF /* Assets.xcassets */,
-				BF14018F22452B9B004F4DAF /* LaunchScreen.storyboard */,
 				BF14019222452B9B004F4DAF /* Info.plist */,
+				BF14018F22452B9B004F4DAF /* LaunchScreen.storyboard */,
 				BF1401DE224678B5004F4DAF /* SemiModalPresentationController.swift */,
+				BFFED6052246883000799811 /* SemiModalExtension.swift */,
 			);
 			path = SemiModal;
+			sourceTree = "<group>";
+		};
+		BF1401E222467E79004F4DAF /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				BF1401E322467E9D004F4DAF /* FirstViewController.swift */,
+				BF1401E422467E9D004F4DAF /* FirstViewController.xib */,
+				BF1401E722467F02004F4DAF /* SecondViewController.swift */,
+				BF1401E822467F02004F4DAF /* SecondViewController.xib */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +142,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1401EA22467F02004F4DAF /* SecondViewController.xib in Resources */,
 				BF14019122452B9B004F4DAF /* LaunchScreen.storyboard in Resources */,
+				BF1401E622467E9D004F4DAF /* FirstViewController.xib in Resources */,
 				BF14018E22452B9B004F4DAF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF14018922452B96004F4DAF /* ViewController.swift in Sources */,
+				BF1401E522467E9D004F4DAF /* FirstViewController.swift in Sources */,
+				BFFED6062246883000799811 /* SemiModalExtension.swift in Sources */,
 				BF14018722452B96004F4DAF /* AppDelegate.swift in Sources */,
+				BF1401E922467F02004F4DAF /* SecondViewController.swift in Sources */,
 				BF1401DF224678B5004F4DAF /* SemiModalPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
