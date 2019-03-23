@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		BF14018722452B96004F4DAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14018622452B96004F4DAF /* AppDelegate.swift */; };
 		BF14018922452B96004F4DAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14018822452B96004F4DAF /* ViewController.swift */; };
-		BF14018C22452B96004F4DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF14018A22452B96004F4DAF /* Main.storyboard */; };
 		BF14018E22452B9B004F4DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF14018D22452B9B004F4DAF /* Assets.xcassets */; };
 		BF14019122452B9B004F4DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF14018F22452B9B004F4DAF /* LaunchScreen.storyboard */; };
+		BF1401DF224678B5004F4DAF /* SemiModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1401DE224678B5004F4DAF /* SemiModalPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF14018322452B96004F4DAF /* SemiModal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SemiModal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF14018622452B96004F4DAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF14018822452B96004F4DAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BF14018B22452B96004F4DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF14018D22452B9B004F4DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF14019022452B9B004F4DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF14019222452B9B004F4DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1401DE224678B5004F4DAF /* SemiModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,10 @@
 			children = (
 				BF14018622452B96004F4DAF /* AppDelegate.swift */,
 				BF14018822452B96004F4DAF /* ViewController.swift */,
-				BF14018A22452B96004F4DAF /* Main.storyboard */,
 				BF14018D22452B9B004F4DAF /* Assets.xcassets */,
 				BF14018F22452B9B004F4DAF /* LaunchScreen.storyboard */,
 				BF14019222452B9B004F4DAF /* Info.plist */,
+				BF1401DE224678B5004F4DAF /* SemiModalPresentationController.swift */,
 			);
 			path = SemiModal;
 			sourceTree = "<group>";
@@ -124,7 +124,6 @@
 			files = (
 				BF14019122452B9B004F4DAF /* LaunchScreen.storyboard in Resources */,
 				BF14018E22452B9B004F4DAF /* Assets.xcassets in Resources */,
-				BF14018C22452B96004F4DAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,20 +136,13 @@
 			files = (
 				BF14018922452B96004F4DAF /* ViewController.swift in Sources */,
 				BF14018722452B96004F4DAF /* AppDelegate.swift in Sources */,
+				BF1401DF224678B5004F4DAF /* SemiModalPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BF14018A22452B96004F4DAF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF14018B22452B96004F4DAF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BF14018F22452B9B004F4DAF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
