@@ -16,4 +16,10 @@ class SecondViewController: UIViewController {
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    @IBAction func viewSmaller(_ sender: Any) {
+        view.frame.size.height = view.frame.height - 50
+    }
+    @IBAction func viewLarger(_ sender: Any) {
+        view.frame.size.height = view.frame.height + 50
+    }
 }
