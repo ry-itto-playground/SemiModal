@@ -26,6 +26,9 @@ class SemiModalPresentationController: UIPresentationController {
         overlayView.frame = containerView.frame
         overlayView.backgroundColor = .black
         overlayView.alpha = 0.0
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapOnOverlay(_:)))
+        tapGestureRecognizer.isEnabled = true
+        overlayView.gestureRecognizers = [tapGestureRecognizer]
         containerView.insertSubview(overlayView, at: 0)
         presentedViewController.transitionCoordinator?.animate(alongsideTransition: { [weak self] _ in
             self?.overlayView.alpha = 0.3
@@ -48,5 +51,9 @@ class SemiModalPresentationController: UIPresentationController {
         if completed {
             overlayView.removeFromSuperview()
         }
+    }
+    
+    @objc private func tapOnOverlay(_ gesture: UITapGestureRecognizer) {
+        self.presentedViewController.dismiss(animated: true, completion: nil)
     }
 }
