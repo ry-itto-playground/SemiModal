@@ -25,7 +25,7 @@ class SemiModalPresentationController: UIPresentationController {
         guard let containerView = containerView else { return }
         overlayView.frame = containerView.frame
         overlayView.backgroundColor = .black
-        overlayView.alpha = 0.5
+        overlayView.alpha = 0.0
         containerView.insertSubview(overlayView, at: 0)
         presentedViewController.transitionCoordinator?.animate(alongsideTransition: { [weak self] _ in
             self?.overlayView.alpha = 0.3
