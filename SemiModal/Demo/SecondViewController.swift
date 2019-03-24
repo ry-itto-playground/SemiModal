@@ -9,17 +9,20 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    var semiModalPresentationController: SemiModalPresentationController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        semiModalPresentationController = presentationController as? SemiModalPresentationController
     }
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func viewSmaller(_ sender: Any) {
-        view.frame.size.height = view.frame.height - 50
+        semiModalPresentationController?.updateHeight(newHeight: view.frame.height - 20)
     }
     @IBAction func viewLarger(_ sender: Any) {
-        view.frame.size.height = view.frame.height + 50
+        semiModalPresentationController?.updateHeight(newHeight: view.frame.height + 20)
     }
 }

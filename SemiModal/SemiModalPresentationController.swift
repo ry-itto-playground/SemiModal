@@ -10,14 +10,18 @@ import UIKit
 
 class SemiModalPresentationController: UIPresentationController {
     private let overlayView = UIView()
+    private var keyValueObservations = [NSKeyValueObservation]()
     
     override var frameOfPresentedViewInContainerView: CGRect {
-        guard
-            var frame = containerView?.frame,
-            let presentedView = presentedView else { return .zero }
-        frame.origin.y = frame.height - presentedView.frame.height
-        frame.size.height = presentedView.frame.height
-        return frame
+        get {
+            guard
+                var frame = containerView?.frame,
+                let presentedView = presentedView else { return .zero }
+            frame.origin.y = frame.height - presentedView.frame.height
+            frame.size.height = presentedView.frame.height
+            return frame
+        }
+        set {}
     }
     
     override func presentationTransitionWillBegin() {
@@ -37,6 +41,7 @@ class SemiModalPresentationController: UIPresentationController {
     
     override func presentationTransitionDidEnd(_ completed: Bool) {
         super.presentationTransitionDidEnd(completed)
+//        observePresentedFrame()
     }
     
     override func dismissalTransitionWillBegin() {
@@ -55,5 +60,14 @@ class SemiModalPresentationController: UIPresentationController {
     
     @objc private func tapOnOverlay(_ gesture: UITapGestureRecognizer) {
         self.presentedViewController.dismiss(animated: true, completion: nil)
+    }
+    
+    func updateHeight(newHeight: CGFloat) {
+        guard let presentedView = presentedView else { return }
+        let moveTo: CGFloat = (self.containerView?.frame.size.height)! - newHeight
+        UIView.animate(withDuration: 1, animations: {
+            presentedView.frame.origin.y += (moveTo - presentedView.frame.origin.y)
+            presentedView.frame.size.height = newHeight
+        })
     }
 }
