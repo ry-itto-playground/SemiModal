@@ -15,6 +15,6 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func presentViewController(_ sender: Any) {
-        presentSemiModal(SecondViewController(), animated: true, completion: nil)
+        presentSemiModal(ChangeHeightTableViewController(), animated: true, completion: nil)
     }
 }

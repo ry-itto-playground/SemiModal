@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeHeightTableViewController" customModule="SemiModal" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="3l9-Al-BGg" id="Z32-SR-7JK"/>
+                <outlet property="tableHeightConstraint" destination="gmQ-N9-g0f" id="Fkv-ug-Fhu"/>
+                <outlet property="tableView" destination="0LH-3a-40l" id="65k-dN-M91"/>
+                <outlet property="view" destination="Xw9-fe-eYw" id="Zs9-rz-dPU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Xw9-fe-eYw">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="204"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0LH-3a-40l">
+                    <rect key="frame" x="0.0" y="60" width="375" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="gmQ-N9-g0f"/>
+                    </constraints>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1C-Ew-y2v">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3l9-Al-BGg">
+                            <rect key="frame" x="8" y="15" width="45" height="30"/>
+                            <state key="normal" title="cancel"/>
+                            <connections>
+                                <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="lYD-w2-viS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0nU-pS-5Cs"/>
+                        <constraint firstItem="3l9-Al-BGg" firstAttribute="centerY" secondItem="M1C-Ew-y2v" secondAttribute="centerY" id="C54-yv-SVV"/>
+                        <constraint firstItem="3l9-Al-BGg" firstAttribute="leading" secondItem="M1C-Ew-y2v" secondAttribute="leading" constant="8" id="dh8-b3-b7h"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="M1C-Ew-y2v" firstAttribute="leading" secondItem="XRv-SI-V1f" secondAttribute="leading" id="B9F-rb-lHB"/>
+                <constraint firstItem="XRv-SI-V1f" firstAttribute="trailing" secondItem="M1C-Ew-y2v" secondAttribute="trailing" id="FBf-CD-x8X"/>
+                <constraint firstItem="M1C-Ew-y2v" firstAttribute="top" secondItem="XRv-SI-V1f" secondAttribute="top" id="QjG-sf-zhj"/>
+                <constraint firstItem="0LH-3a-40l" firstAttribute="top" secondItem="M1C-Ew-y2v" secondAttribute="bottom" id="mg2-22-dJh"/>
+                <constraint firstItem="0LH-3a-40l" firstAttribute="leading" secondItem="Xw9-fe-eYw" secondAttribute="leading" id="re7-VG-zYw"/>
+                <constraint firstAttribute="trailing" secondItem="0LH-3a-40l" secondAttribute="trailing" id="vvs-6z-c0g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="XRv-SI-V1f"/>
+            <point key="canvasLocation" x="367.19999999999999" y="-373.31334332833586"/>
+        </view>
+    </objects>
+</document>

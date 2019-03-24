@@ -16,6 +16,8 @@
 		BF1401E922467F02004F4DAF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1401E722467F02004F4DAF /* SecondViewController.swift */; };
 		BF1401EA22467F02004F4DAF /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1401E822467F02004F4DAF /* SecondViewController.xib */; };
 		BFFED6062246883000799811 /* SemiModalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFED6052246883000799811 /* SemiModalExtension.swift */; };
+		BFFED609224778C500799811 /* ChangeHeightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFED607224778C500799811 /* ChangeHeightTableViewController.swift */; };
+		BFFED60A224778C500799811 /* ChangeHeightTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFED608224778C500799811 /* ChangeHeightTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		BF1401E722467F02004F4DAF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		BF1401E822467F02004F4DAF /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		BFFED6052246883000799811 /* SemiModalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalExtension.swift; sourceTree = "<group>"; };
+		BFFED607224778C500799811 /* ChangeHeightTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeHeightTableViewController.swift; sourceTree = "<group>"; };
+		BFFED608224778C500799811 /* ChangeHeightTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeHeightTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				BF1401E422467E9D004F4DAF /* FirstViewController.xib */,
 				BF1401E722467F02004F4DAF /* SecondViewController.swift */,
 				BF1401E822467F02004F4DAF /* SecondViewController.xib */,
+				BFFED607224778C500799811 /* ChangeHeightTableViewController.swift */,
+				BFFED608224778C500799811 /* ChangeHeightTableViewController.xib */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 			files = (
 				BF1401EA22467F02004F4DAF /* SecondViewController.xib in Resources */,
 				BF14019122452B9B004F4DAF /* LaunchScreen.storyboard in Resources */,
+				BFFED60A224778C500799811 /* ChangeHeightTableViewController.xib in Resources */,
 				BF1401E622467E9D004F4DAF /* FirstViewController.xib in Resources */,
 				BF14018E22452B9B004F4DAF /* Assets.xcassets in Resources */,
 			);
@@ -160,6 +167,7 @@
 				BFFED6062246883000799811 /* SemiModalExtension.swift in Sources */,
 				BF14018722452B96004F4DAF /* AppDelegate.swift in Sources */,
 				BF1401E922467F02004F4DAF /* SecondViewController.swift in Sources */,
+				BFFED609224778C500799811 /* ChangeHeightTableViewController.swift in Sources */,
 				BF1401DF224678B5004F4DAF /* SemiModalPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
