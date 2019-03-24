@@ -10,18 +10,14 @@ import UIKit
 
 class SemiModalPresentationController: UIPresentationController {
     private let overlayView = UIView()
-    private var keyValueObservations = [NSKeyValueObservation]()
     
     override var frameOfPresentedViewInContainerView: CGRect {
-        get {
-            guard
-                var frame = containerView?.frame,
-                let presentedView = presentedView else { return .zero }
-            frame.origin.y = frame.height - presentedView.frame.height
-            frame.size.height = presentedView.frame.height
-            return frame
-        }
-        set {}
+        guard
+            var frame = containerView?.frame,
+            let presentedView = presentedView else { return .zero }
+        frame.origin.y = frame.height - presentedView.frame.height
+        frame.size.height = presentedView.frame.height
+        return frame
     }
     
     override func presentationTransitionWillBegin() {
@@ -41,7 +37,6 @@ class SemiModalPresentationController: UIPresentationController {
     
     override func presentationTransitionDidEnd(_ completed: Bool) {
         super.presentationTransitionDidEnd(completed)
-//        observePresentedFrame()
     }
     
     override func dismissalTransitionWillBegin() {
