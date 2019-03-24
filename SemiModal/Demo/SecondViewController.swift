@@ -15,6 +15,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         semiModalPresentationController = presentationController as? SemiModalPresentationController
+        view.layer.cornerRadius = 20
     }
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
